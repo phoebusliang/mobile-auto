@@ -1,0 +1,8 @@
+default: --format html --out report<%= ENV['TEST_ENV_NUMBER'] %>.html
+html_report: --format progress --format html --out=report/features_report.html
+pretty: -f pretty
+
+android_chrome: DRIVER=android_chrome
+ios_safari: DRIVER=ios_safari
+ios_simulator: DRIVER=ios_simulator
+android_simulator: DRIVER=android_simulator
